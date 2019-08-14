@@ -6,6 +6,11 @@
 	font-size: 100%;
 }
 
+.col2 {
+	width: 100%;
+	.flex-col(50%);
+}
+
 .container {
 	width: 100%;
 	margin: 0 auto;
@@ -40,11 +45,17 @@ nav {
 
 h1 {
 	font-size: 4rem;
-	margin-bottom: 1rem;
 }
 h2 {
 	font-size: 1.4rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.65rem;
+	font-weight: 700;
+}
+h3 {
+	font-size: 1.4rem;
+	letter-spacing: 0.07rem;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
 }
 p {
 	font-size: 1.1rem;
@@ -62,7 +73,11 @@ p {
 		width: 300px;
 		height: 300px;
 	}
+	h1, h2 {
+		margin-bottom: 1rem;
+	}
 	h2 {
+		font-weight: normal;
 		padding-bottom: 30px;
 		border-bottom: 1px solid @secondaryColor;
 	}
@@ -88,7 +103,7 @@ p {
 .about {
 	.flex();
 	justify-content: space-between;
-	padding-top: 36px;
+	padding: 2.25rem 0 1.625rem;
 
 	h2 {
 		font-size: 2.1rem;
@@ -97,9 +112,35 @@ p {
 	ul {
 		border-bottom: 1px solid lightgrey;
 		li {
+			font-size: 1.2rem;
+			padding: .75em 1.15em .8em;
 			border: 1px solid lightgrey;
 			border-bottom: 0;
-
 		}
 	}
+
+	.col2 {
+		&:first-child {
+			padding-right: 1rem;
+		}
+		&:last-child {
+			padding-left: 1rem;
+		}
+	}
+}
+
+.work {
+	padding-bottom: 2.25rem;
+	h2 {
+		font-size: 1.55rem;
+		margin-bottom: 0.7rem;
+	}
+}
+
+footer {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	color: @contrastColor;
+	text-align: center;
+	background-color: rgb(53, 53, 53);
 }
