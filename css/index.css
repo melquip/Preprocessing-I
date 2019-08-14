@@ -319,14 +319,17 @@ p {
 .container #work table th:last-child {
   width: 30%;
 }
-.container #work a {
+.container #work a:not(.btn) {
   color: black;
   text-decoration: none;
   transition: all 0.33s ease-in-out;
 }
-.container #work a:hover {
+.container #work a:not(.btn):hover {
   color: #2e6e83;
   text-decoration: underline;
+}
+.container #work .btn {
+  margin-top: 1rem;
 }
 .container #contacts {
   padding-bottom: 2.25rem;

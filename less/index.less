@@ -186,7 +186,7 @@ p {
 				}
 			}
 		}
-		a {
+		a:not(.btn) {
 			color: @primaryColor;
 			text-decoration: none;
 			transition: all .33s ease-in-out;
@@ -194,6 +194,9 @@ p {
 				color: @linkHoverColor;
 				text-decoration: underline;
 			}
+		}
+		.btn {
+			margin-top: 1rem;
 		}
 	}
 
