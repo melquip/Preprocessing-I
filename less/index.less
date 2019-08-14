@@ -17,10 +17,6 @@
 	max-width: 1000px;
 	padding: 0 64px;
 	font-family: 'Titillium Web', Arial, sans-serif;
-	
-	min-height: 100%;
-	border: 1px solid @primaryColor;
-	
 }
 
 header {
@@ -133,13 +129,46 @@ p {
 	padding-bottom: 2.25rem;
 	h2 {
 		font-size: 1.55rem;
-		margin-bottom: 0.7rem;
+		margin-bottom: .7rem;
+	}
+	table {
+		width: 100%;
+		thead {
+			border-top: 1px solid lightgrey;
+		}
+		th, td {
+			font-size: 1.1rem;
+			line-height: 2em;
+			padding: .45em 0;
+			text-align: left;
+			border-bottom: 1px solid lightgrey;
+		}
+		tr :first-child {
+			padding-left: .7em;
+		}
+		th {
+			font-weight: 700;
+			&:first-child {
+				width: 10%;
+			}
+			&:nth-child(2) {
+				width: 14%;
+			}
+			&:nth-child(3) {
+				width: 33%;
+			}
+			&:last-child {
+				width: 33%;
+			}
+		}
 	}
 }
 
 footer {
-	padding-top: 30px;
-	padding-bottom: 60px;
+	font-size: 1.1rem;
+	margin: 0 -.9em;
+	padding-top: 1.14em;
+	padding-bottom: 2.28em;
 	color: @contrastColor;
 	text-align: center;
 	background-color: rgb(53, 53, 53);

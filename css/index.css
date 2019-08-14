@@ -148,8 +148,6 @@ body {
   max-width: 1000px;
   padding: 0 64px;
   font-family: 'Titillium Web', Arial, sans-serif;
-  min-height: 100%;
-  border: 1px solid black;
 }
 header {
   padding-bottom: 3px;
@@ -253,9 +251,43 @@ p {
   font-size: 1.55rem;
   margin-bottom: 0.7rem;
 }
+.work table {
+  width: 100%;
+}
+.work table thead {
+  border-top: 1px solid lightgrey;
+}
+.work table th,
+.work table td {
+  font-size: 1.1rem;
+  line-height: 2em;
+  padding: 0.45em 0;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+}
+.work table tr :first-child {
+  padding-left: 0.7em;
+}
+.work table th {
+  font-weight: 700;
+}
+.work table th:first-child {
+  width: 10%;
+}
+.work table th:nth-child(2) {
+  width: 14%;
+}
+.work table th:nth-child(3) {
+  width: 33%;
+}
+.work table th:last-child {
+  width: 33%;
+}
 footer {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  font-size: 1.1rem;
+  margin: 0 -0.9em;
+  padding-top: 1.14em;
+  padding-bottom: 2.28em;
   color: white;
   text-align: center;
   background-color: #353535;
