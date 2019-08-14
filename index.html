@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Melquisedeque Pereira's Resume</title>
 	<link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if lt IE 9]>
@@ -14,71 +14,100 @@
 </head>
 
 <body>
+	<a href="#" name="top"></a>
 	<div class="container">
 		<header>
 			<nav>
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Portfolio</a>
-				<a href="#">Contact</a>
+				<a href="#top">Home</a>
+				<a href="#about">About</a>
+				<a href="#work">Portfolio</a>
+				<a href="#contacts">Contact</a>
 			</nav>
 		</header>
-		<section class="intro">
-			<img src="img/pic.jpg" alt="">
+		<section id="intro">
+			<img src="img/myface.jpg" alt="">
 			<h1>Melquisedeque Pereira</h1>
 			<h2>Lambda School WEBEU3 Student</h2>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quo nam quidem id quasi nemo in a nobis, inventore rem, commodi natus at nihil quia iure quis officia sed veniam!</p>
+			<p>I'm a 21 year-old programmer with three years of work experience in the field. I'm also a portuguese
+				ping-pong, chess and video game player with an interest in learning, strategy and economy.</p>
 			<a href="#contacts" class="btn">Lets Team Up</a>
 		</section>
-		<section class="about">
+		<section id="about">
 			<div class="col2">
 				<h2>Listen Up...</h2>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel repellendus veritatis velit. Illo aut molestias enim amet. Delectus, sint reiciendis voluptatum unde id blanditiis et totam laboriosam asperiores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis, ex similique nesciunt quidem, voluptatum maxime, neque quae minima voluptate a. Cupiditate vel molestiae quibusdam ipsam perspiciatis, pariatur dolorum ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel repellendus veritatis velit.
+					Illo aut molestias enim amet. Delectus, sint reiciendis voluptatum unde id blanditiis et totam
+					laboriosam asperiores neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+					officiis, ex similique nesciunt quidem, voluptatum maxime, neque quae minima voluptate a. Cupiditate
+					vel molestiae quibusdam ipsam perspiciatis, pariatur dolorum ad! Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. </p>
 
 			</div>
 			<div class="col2">
 				<h3>Stuff I'm Good At:</h3>
 				<ul>
-					<li>Ping-Pong</li>
-					<li>Chess</li>
-					<li>Ping-Pong</li>
-					<li>Ping-Pong</li>
-					<li>Ping-Pong</li>
+					<li>HTML</li>
+					<li>CSS & LESS</li>
+					<li>Javascript & jQuery</li>
+					<li>PHP</li>
+					<li>SQL</li>
 				</ul>
 			</div>
 		</section>
-		<section class="work">
+		<section id="work">
 			<h2>Work History</h2>
 			<table>
 				<thead>
 					<tr>
-						<th>Years</th>
-						<th>Company</th>
+						<th>Module</th>
 						<th>Title</th>
-						<th>Tech Used</th>
+						<th>Code Repository</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>2.3</td>
-						<td>Livetech</td>
-						<td>Full-stack Web Developer</td>
-						<td>HTML5, CSS3, jQuery, PHP, SQL</td>
+						<td>Responsive Design II</td>
+						<td>title</td>
+						<td><a href="https://github.com/melquip/portfolio-website/tree/melquisedeque-pereira"
+								target="_blank">View code</a></td>
 					</tr>
 					<tr>
-						<td>0.6</td>
-						<td>RISI</td>
-						<td>Software Developer</td>
-						<td>C#, VB.NET, ASP.NET, SQLServer</td>
+						<td>Responsive Design I</td>
+						<td>title</td>
+						<td><a href="https://github.com/melquip/responsive-web-design-I/tree/melquisedeque-pereira"
+								target="_blank">View code</a></td>
 					</tr>
 					<tr>
-						<td>0.6</td>
-						<td>RISI</td>
-						<td>Software Developer</td>
-						<td>C#, VB.NET, ASP.NET, SQLServer</td>
+						<td>User Interface Sprint #1</td>
+						<td>title</td>
+						<td><a href="https://github.com/melquip/Sprint-Challenge--User-Interface/tree/melquisedeque-pereira"
+								target="_blank">View code</a></td>
 					</tr>
 				</tbody>
 			</table>
+		</section>
+		<section id="contacts">
+			<h2>Contacts</h2>
+			<form action="#contacts" method="POST">
+				<div class="group col3">
+					<label for="">Name:</label>
+					<input id="name" name="name" type="text">
+				</div>
+				<div class="group col3">
+					<label for="">Email:</label>
+					<input id="email" name="email" type="email">
+				</div>
+				<div class="group col3">
+					<label for="">Subject:</label>
+					<input id="subject" name="subject" type="text">
+				</div>
+				<div class="group">
+					<label for="">Message:</label>
+					<textarea id="message" name="message"></textarea>
+				</div>
+				<button class="btn">Submit</button>
+			</form>
+			
 		</section>
 		<footer>
 			Copyright Awesomeness 2019

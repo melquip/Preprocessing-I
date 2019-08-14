@@ -137,18 +137,6 @@ body {
 :root {
   font-size: 100%;
 }
-.col2 {
-  width: 100%;
-  max-width: 50%;
-  flex-basis: 50%;
-}
-.container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 64px;
-  font-family: 'Titillium Web', Arial, sans-serif;
-}
 header {
   padding-bottom: 3px;
 }
@@ -186,102 +174,171 @@ p {
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
 }
-.intro {
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 64px;
+  font-family: 'Titillium Web', Arial, sans-serif;
+}
+.container .col2 {
+  width: 100%;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.container #intro {
   padding: 60px 30px 80px;
-  background-color: lightgrey;
+  background-color: #f0f0f0;
   border-radius: 5px;
 }
-.intro img {
+.container #intro img {
   display: block;
   width: 300px;
   height: 300px;
+  object-fit: cover;
+  object-position: top center;
 }
-.intro h1,
-.intro h2 {
+.container #intro h1,
+.container #intro h2 {
   margin-bottom: 1rem;
 }
-.intro h2 {
+.container #intro h2 {
   font-weight: normal;
   padding-bottom: 30px;
   border-bottom: 1px solid grey;
 }
-.intro p {
+.container #intro p {
   padding-top: 0.5rem;
   padding-bottom: 0.6rem;
 }
-.btn {
+.container .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
   display: inline-block;
   color: white;
   font-size: 20px;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03em;
   font-weight: 700;
   text-decoration: none;
-  padding: 0.8rem 1.2rem;
-  margin-left: 0.1rem;
-  border-radius: 0.3rem;
+  padding: 0.65em 0.95em;
+  margin-left: 0.1em;
+  border-radius: 0.3em;
   background-color: grey;
 }
-.about {
+.container #about {
   display: flex;
   justify-content: space-between;
   padding: 2.25rem 0 1.625rem;
 }
-.about h2 {
+.container #about h2 {
   font-size: 2.1rem;
 }
-.about ul {
-  border-bottom: 1px solid lightgrey;
+.container #about ul {
+  border-bottom: 1px solid #a5a5a5;
 }
-.about ul li {
+.container #about ul li {
   font-size: 1.2rem;
   padding: 0.75em 1.15em 0.8em;
-  border: 1px solid lightgrey;
+  border: 1px solid #a5a5a5;
   border-bottom: 0;
 }
-.about .col2:first-child {
+.container #about .col2:first-child {
   padding-right: 1rem;
 }
-.about .col2:last-child {
+.container #about .col2:last-child {
   padding-left: 1rem;
 }
-.work {
+.container #work {
   padding-bottom: 2.25rem;
 }
-.work h2 {
+.container #work h2 {
   font-size: 1.55rem;
   margin-bottom: 0.7rem;
 }
-.work table {
+.container #work table {
   width: 100%;
 }
-.work table thead {
-  border-top: 1px solid lightgrey;
+.container #work table thead {
+  border-top: 1px solid #a5a5a5;
 }
-.work table th,
-.work table td {
+.container #work table th,
+.container #work table td {
   font-size: 1.1rem;
   line-height: 2em;
   padding: 0.45em 0;
   text-align: left;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #a5a5a5;
 }
-.work table tr :first-child {
+.container #work table tr > :first-child {
   padding-left: 0.7em;
 }
-.work table th {
+.container #work table tbody tr:nth-child(2n+1) {
+  background-color: #f0f0f0;
+}
+.container #work table th {
   font-weight: 700;
 }
-.work table th:first-child {
-  width: 10%;
+.container #work table th:first-child {
+  width: 25%;
 }
-.work table th:nth-child(2) {
-  width: 14%;
+.container #work table th:nth-child(2) {
+  width: 50%;
 }
-.work table th:nth-child(3) {
-  width: 33%;
+.container #work table th:last-child {
+  width: 25%;
 }
-.work table th:last-child {
-  width: 33%;
+.container #work a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.33s ease-in-out;
+}
+.container #work a:hover {
+  color: #2e6e83;
+  text-decoration: underline;
+}
+.container #contacts {
+  padding-bottom: 2.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.container #contacts h2,
+.container #contacts form {
+  width: 100%;
+}
+.container #contacts form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.container #contacts .group {
+  font-size: 1rem;
+  line-height: 1.5em;
+  padding: 0 0em 1em;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.container #contacts .group.col3 {
+  max-width: calc((100% / 3) - 20px);
+  flex-basis: calc((100% / 3) - 20px);
+}
+.container #contacts label {
+  display: block;
+}
+.container #contacts input,
+.container #contacts textarea {
+  width: 100%;
+  line-height: inherit;
+  padding: 0 0.5em;
+}
+.container #contacts textarea {
+  min-width: 100%;
+  min-height: 100px;
+}
+.container #contacts .btn {
+  font-size: 1rem;
 }
 footer {
   font-size: 1.1rem;
