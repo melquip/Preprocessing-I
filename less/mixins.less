@@ -1,0 +1,13 @@
+.flex() {
+	display: flex;
+}
+.flex(@direction, @wrap, @justifCont) {
+	display: flex;
+	flex-flow: @direction @wrap;
+	justify-content: @justifCont;
+}
+
+.flex-col(@w) {
+	max-width: @w;
+	flex-basis: @w;
+}
